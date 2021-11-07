@@ -1,0 +1,33 @@
+[
+    {
+        "namespace": "internals",
+        "functions": [
+            {
+                "name": "startBackgroundProcess",
+                "description": "Does background things",
+                "type": "function",
+                "async": true,
+                "parameters": [
+                    {
+                        "name": "windowId",
+                        "description": "the window",
+                        "type": "integer"
+                    }
+                ]
+            },
+            {
+                "name": "stopBackgroundProcess",
+                "description": "Does background things",
+                "type": "function",
+                "async": true,
+                "parameters": [
+                    {
+                        "name": "windowId",
+                        "description": "the window",
+                        "type": "integer"
+                    }
+                ]
+            }
+        ]
+    }
+]

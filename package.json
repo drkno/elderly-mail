@@ -1,0 +1,15 @@
+{
+    "name": "elderly-mail",
+    "version": "1.0.0",
+    "description": "Opinionated Thunderbird for the elderly",
+    "repository": "https://github.com/drkno/elderly-mail",
+    "author": "Matthew Knox",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "build": "web-ext build -s src/ -a build/ -o -n elderly-mail.xpi"
+    },
+    "devDependencies": {
+        "web-ext": "^6.5.0"
+    }
+}

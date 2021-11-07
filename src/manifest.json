@@ -1,0 +1,40 @@
+{
+	"manifest_version": 2,
+	"name": "Elderly Mail",
+	"description": "Opinionated Thunderbird for the elderly.",
+	"version": "1.0",
+	"developer": {
+		"name": "Matthew Knox",
+		"url": "https://github.com/drkno/elderly-mail"
+	},
+    "applications": {
+        "gecko": {
+            "id": "elderly@extensions.makereti.co.nz",
+            "strict_min_version": "78.0"
+        }
+    },
+	"background": {
+		"scripts": [
+			"tabs.js",
+            "layout.js",
+            "contextmenu.js"
+		]
+	},
+	"permissions": [
+        "menus",
+        "menus.overrideContext",
+        "activeTab",
+        "tabs",
+        "tabHide"
+	],
+    "experiment_apis": {
+        "internals": {
+            "schema": "schema.json",
+            "parent": {
+                "scopes": [ "addon_parent" ],
+                "paths": [[ "internals" ]],
+                "script": "internals.js"
+            }
+        }
+    }
+}
